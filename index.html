@@ -1,2 +1,49 @@
-Hello World
-Hello World test only
+<html>
+    <head>
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/4.0.0/firebase.js"></script>
+        <script src="js/script.js"></script>
+    </head>
+    <body>
+        <div id="app">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Username</th>
+                        <th>Email</th>
+                    </tr>
+                    <tr v-for="user in users">
+                        <td>{{ user.key }}</td>
+                        <td>{{ user.username }}</td>
+                        <td>{{ user.email }}</td>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+        <script>
+            var app = new Vue({
+                el: '#app',
+                data: {
+                  users : {}
+                },
+                methods : {
+                    populateUsers : function()
+                    {
+                        var user = fdb.ref('/users');
+                        user.on("value",function(snapshot){
+                           app.users = snapshot.val(); 
+                        });
+                    }
+                }
+            });
+            
+            app.populateUsers();
+        </script>
+    </body>
+</html>
