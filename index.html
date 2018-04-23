@@ -11,17 +11,18 @@
     </head>
     <body>
         <div id="app">
-            <table>
+            <table class="striped">
                 <thead>
                     <tr>
                         <th>ID</th>
                         <th>Username</th>
                         <th>Email</th>
                     </tr>
-                    <tr v-for="user in users">
-                        <td>{{ user.key }}</td>
-                        <td>{{ user.username }}</td>
-                        <td>{{ user.email }}</td>
+                    <tr v-for="(user, key, index) in users">
+                        <!--<td>{{ key }}</td>-->
+                        <td>{{ index + 1 }}</td>
+                        <td><input type="text" v-bind:value="user.username" @change="updateUser" v-bind:data-key="key" data-field="username"></td>
+                        <td><input type="email" v-bind:value="user.email" @change="updateUser" v-bind:data-key="key" data-field="email"></td>
                     </tr>
                 </thead>
             </table>
@@ -39,6 +40,20 @@
                         user.on("value",function(snapshot){
                            app.users = snapshot.val(); 
                         });
+                    },
+                    updateUser : function(event)
+                    {
+                        var newValue = event.target.value;
+                        var userId = event.target.dataset.key;
+                        var field = event.target.dataset.field;
+                        if(field == "username")
+                        {
+                            fdb.ref("users").child(userId).child("username").set(newValue);
+                        }
+                        else if(field == "email")
+                        {
+                            fdb.ref("users").child(userId).child("email").set(newValue);
+                        }
                     }
                 }
             });
