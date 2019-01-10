@@ -19,16 +19,30 @@ and open the template in the editor.
 
 body
 {
-    background: url(../images/myworkcollage.png) center center no-repeat;
-    background-size: contain;
     color: #ffffff;
+}
+
+.parralax
+{
+    z-index: -1;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background: url(../images/myworkcollage.jpg) center center no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
 }
 
 .scroll-page
 {
-    background: rgba(44, 62, 80, 0.8);
+    background: rgba(44, 62, 80, 1);
     min-height: 100vh;
     height: auto;
+}
+
+.scroll-page-1
+{
+    background: rgba(44, 62, 80, 0.9);
 }
 
 .big-txt
@@ -68,7 +82,6 @@ body
 
 .div1
 {
-    background: #1e2a35;
     padding: 60px;
 }
 
@@ -80,4 +93,106 @@ body
     -moz-box-shadow: 0px 0px 19px 0px rgba(0,0,0,0.75);
     box-shadow: 0px 0px 19px 0px rgba(0,0,0,0.75);
     margin-bottom: 15px;
+}
+
+.navigator
+{
+    z-index: 9;
+    position: fixed;
+    list-style: none;
+    padding-left: 0;
+    right: 10vh;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.navigator li i
+{
+    font-size: 40px;
+    padding: 20px;
+    border-radius: 50%;
+    margin: 5px;
+    height: 80px;
+    width: 80px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.navigator li i:hover, .navigator li i.active
+{
+    transition: all 0.3s;
+    background: #fff;
+    color: #2c3e50;
+}
+
+.work-item
+{
+    padding: 0;
+    height: 35vh;
+}
+
+.work-wrapper span
+{
+    display: block;
+    text-align: left;
+    font-size: 20px;
+}
+
+.work-wrapper span.name
+{
+    font-weight: bold;
+    font-size: 30px
+}
+
+.work-wrapper
+{
+    opacity: 0;
+    padding: 20px;
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.9);
+}
+
+.work-wrapper:hover
+{
+    transition: all 0.5s;
+    opacity: 1;
+}
+
+.work-wrapper .btn-info
+{
+    margin-top: 10px;
+}
+
+.scroll-page-3
+{
+    background: #ddd;
+    color: #000;
+    padding: 50px;
+}
+
+.emp-image
+{
+    height: 100px;
+    margin: 50px 0;
+}
+
+.emp-name
+{
+    font-size: 26px;
+}
+
+.emp-pos
+{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.employer-item-container span
+{
+    display: block;
+    text-align: left;
 }
