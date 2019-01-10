@@ -1,0 +1,83 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 01 9, 19, 10:46:18 AM
+    Author     : jacosta
+*/
+.arimo-txt
+{
+    font-family: 'Arimo', sans-serif;
+}
+
+.rubik-txt
+{
+    font-family: 'Rubik', sans-serif;
+}
+
+body
+{
+    background: url(../images/myworkcollage.png) center center no-repeat;
+    background-size: contain;
+    color: #ffffff;
+}
+
+.scroll-page
+{
+    background: rgba(44, 62, 80, 0.8);
+    min-height: 100vh;
+    height: auto;
+}
+
+.big-txt
+{
+    font-size: 40px;
+}
+
+.med-txt
+{
+    font-size: 24px;
+}
+
+.small-txt
+{
+    font-size: 16px;
+}
+
+.center-block
+{
+    float: none;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.text-center
+{
+    text-align: center;
+}
+
+.push-to-center
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.div1
+{
+    background: #1e2a35;
+    padding: 60px;
+}
+
+.my-image
+{
+    margin: 0 auto;
+    max-width: 250px;
+    -webkit-box-shadow: 0px 0px 19px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 19px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 19px 0px rgba(0,0,0,0.75);
+    margin-bottom: 15px;
+}
