@@ -120,7 +120,6 @@ $(document).ready(function(){
     
     $(".scroll-page").mouseenter(function(){
        var pos = $(this).attr("data-pos");
-       console.log(pos);
        if(pos != navpos)
        {
            $(".navigator li i").removeClass("active");
@@ -132,7 +131,7 @@ $(document).ready(function(){
 
 var getWorkItemView = function(workItem)
 {
-    var str =  '<div class="work-item col-6 col-md-4 no-gutters" style="background: url(images/thumbnails/'+ workItem.image +') center center no-repeat; background-size: cover;">'
+    var str =  '<div class="work-item col-6 col-lg-4 no-gutters" style="background: url(images/thumbnails/'+ workItem.image +') center center no-repeat; background-size: cover;">'
         str +=  '<div class="work-wrapper">';
         str +=     '<span class="name">'+ workItem.name + '</span>';
         str +=     '<span>'+ workItem.type +'</span>';
@@ -146,7 +145,7 @@ var getWorkItemView = function(workItem)
 
 var getEmpItemView = function(empItem)
 {
-    var str = '<div class="col-12 col-md-4">\n\
+    var str = '<div class="col-12 col-lg-4">\n\
                     <div class="emp-image" style="background: url(images/employer/'+ empItem.image +') center center no-repeat; background-size: contain;"></div>\n\
                     <span class="emp-name rubik-txt">'+ empItem.name +'</span>\n\
                     <span class="emp-pos">'+ empItem.position +'</span>\n\
