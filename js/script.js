@@ -76,7 +76,7 @@ var myWorks = {
     ],
     employment : [
         {
-            name: "TAGIT PH",
+            name: "Tagit PH",
             image: "tagit.png",
             position: "Front End and App Developer",
             date: "May 2018 - Present",
@@ -94,7 +94,7 @@ var myWorks = {
             image: "sti.png",
             position: "IT Coach",
             date: "June 2014 - April 2016",
-            experience: "<br>Handled IT subjects such as: Java Basis, Java Object Oriented, Mobile Apps Developmnet (Android), Assembly Language, Web Development (PHP), VB.net, Database Management (SQL), Computer Fundamentals and Thesis."
+            experience: "<br>Handled IT subjects such as: Java Basic, Java Object Oriented, Mobile Apps Developmnet (Android), Assembly Language, Web Development (PHP), VB.net, Database Management (SQL), Computer Fundamentals and Thesis."
         }
     ]
 }
