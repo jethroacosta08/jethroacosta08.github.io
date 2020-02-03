@@ -24,7 +24,7 @@ var myWorks = {
         },
         {
             name: "EON",
-            image: "eon.png",
+            image: "eon.PNG",
             type : "Internet Banking",
             role: "Front End Developer",
             company : "TAGIT PH",
