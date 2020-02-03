@@ -8,7 +8,7 @@ var myWorks = {
     web : [
         {
             name: "AIBOTCMS",
-            image: "aibotcms.png",
+            image: "aibotcms.PNG",
             type : "Product (ChatBot CMS)",
             role: "Full Stack Developer",
             company : "Cosmic AI",
@@ -90,7 +90,7 @@ var myWorks = {
     app : [
         {
             name: "PNB Mobile Banking",
-            image: "pnbmobile.png",
+            image: "pnbmobile.PNG",
             type : "Mobile Banking",
             role: "Mobile App Developer",
             company : "TAGIT PH",
@@ -98,7 +98,7 @@ var myWorks = {
         },
         {
             name: "FE Credit",
-            image: "fec.png",
+            image: "fec.PNG",
             type : "Finance",
             role: "Mobile App Developer",
             company : "TAGIT PH",
