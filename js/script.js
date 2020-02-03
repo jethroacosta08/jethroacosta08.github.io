@@ -7,12 +7,28 @@ var navpos = "1";
 var myWorks = {
     web : [
         {
+            name: "AIBOTCMS",
+            image: "aibotcms.png",
+            type : "Product (ChatBot CMS)",
+            role: "Full Stack Developer",
+            company : "Cosmic AI",
+            link : "https://aibotcms.herokuapp.com/"
+        },
+        {
             name: "PNB",
             image: "pnb.png",
             type : "Internet Banking",
             role: "Front End Developer",
             company : "TAGIT PH",
             link : "https://portal.pnb.com.ph/mib/login.do?app=PN"
+        },
+        {
+            name: "EON",
+            image: "eon.png",
+            type : "Internet Banking",
+            role: "Front End Developer",
+            company : "TAGIT PH",
+            link : "https://ib.eonbankph.com/mib/login.do?app=NB"
         },
         {
             name: "Leederville Cameras",
@@ -72,7 +88,22 @@ var myWorks = {
         }
     ],
     app : [
-        
+        {
+            name: "PNB Mobile Banking",
+            image: "pnbmobile.png",
+            type : "Mobile Banking",
+            role: "Mobile App Developer",
+            company : "TAGIT PH",
+            link : "https://play.google.com/store/apps/details?id=com.pnb.mobile&hl=fil"
+        },
+        {
+            name: "FE Credit",
+            image: "fec.png",
+            type : "Finance",
+            role: "Mobile App Developer",
+            company : "TAGIT PH",
+            link : "https://play.google.com/store/apps/details?id=com.fecredit.cards&hl=fil"
+        }
     ],
     employment : [
         {
@@ -109,8 +140,13 @@ $(document).ready(function(){
     });
     
     //populating work items;
+    //web
     $.each(myWorks.web,function(key, row){
         $(".work-item-container").append(getWorkItemView(row));
+    });
+    //app
+    $.each(myWorks.app,function(key, row){
+        $(".work-item-container").append(getWorkItemView(row,"Go to Playstore"));
     });
     
     //populating employment items
@@ -129,14 +165,19 @@ $(document).ready(function(){
     });
 });
 
-var getWorkItemView = function(workItem)
+var getWorkItemView = function(workItem, buttonCaption)
 {
-    var str =  '<div class="work-item col-6 col-lg-4 no-gutters" style="background: url(images/thumbnails/'+ workItem.image +') center center no-repeat; background-size: cover;">'
+    if(!buttonCaption)
+    {
+        buttonCaption = "Go to site";
+    }
+
+    var str =  '<div class="work-item col-12 col-sm-6 col-lg-4 no-gutters" style="background: url(images/thumbnails/'+ workItem.image +') center center no-repeat; background-size: cover;">'
         str +=  '<div class="work-wrapper">';
         str +=     '<span class="name">'+ workItem.name + '</span>';
         str +=     '<span>'+ workItem.type +'</span>';
         str +=     '<span>' + workItem.role + ' - ' + workItem.company + '</span>';
-        str +=     '<a target="_blank" href="'+ workItem.link +'" class="btn btn-info">Go to site</a>';
+        str +=     '<a target="_blank" href="'+ workItem.link +'" class="btn btn-info">'+ buttonCaption +'</a>';
         str +=  '</div>';
         str += '</div>';
         
