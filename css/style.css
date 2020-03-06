@@ -20,6 +20,7 @@ and open the template in the editor.
 body
 {
     color: #ffffff;
+    overflow-x: hidden;
 }
 
 .parralax
