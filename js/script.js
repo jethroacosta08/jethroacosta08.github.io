@@ -55,14 +55,6 @@ var myWorks = {
             link: "http://www.100proof.com.au"
         },
         {
-            name: "Happy Kids Early Learning",
-            image: "happykids.png",
-            type: "Information Website",
-            role: "Full Stack Developer",
-            company : "Kayweb",
-            link: "http://www.happykidsearlylearning.com.au/"
-        },
-        {
             name: "MyCar Body Shop",
             image: "mycar.png",
             type: "Information Website",
@@ -94,7 +86,10 @@ var myWorks = {
             type : "Mobile Banking",
             role: "Mobile App Developer",
             company : "TAGIT PH",
-            link : "https://play.google.com/store/apps/details?id=com.pnb.mobile&hl=fil"
+            applink : {
+                android : "https://play.google.com/store/apps/details?id=com.pnb.mobile&hl=fil",
+                ios : "https://apps.apple.com/ph/app/pnb-mobile-banking/id1139710846"
+            }
         },
         {
             name: "FE Credit",
@@ -102,7 +97,10 @@ var myWorks = {
             type : "Finance",
             role: "Mobile App Developer",
             company : "TAGIT PH",
-            link : "https://play.google.com/store/apps/details?id=com.fecredit.cards&hl=fil"
+            applink : {
+                android : "https://play.google.com/store/apps/details?id=com.fecredit.cards&hl=fil",
+                ios : "https://apps.apple.com/us/app/fe-credit-mobile/id1404353894"
+            }
         }
     ],
     employment : [
@@ -145,8 +143,19 @@ $(document).ready(function(){
         $(".work-item-container").append(getWorkItemView(row));
     });
     //app
+    var device = getMobileOperatingSystem();
     $.each(myWorks.app,function(key, row){
-        $(".work-item-container").append(getWorkItemView(row,"Go to Playstore"));
+        let caption = "Go to Play Store";
+        if(device == "ios")
+        {
+            caption = "Go to App Store";
+            row.link = row.applink.ios;
+        }
+        else
+        {
+            row.link = row.applink.android;
+        }
+        $(".work-item-container").append(getWorkItemView(row, caption));
     });
     
     //populating employment items
@@ -194,4 +203,23 @@ var getEmpItemView = function(empItem)
                     <p>'+ empItem.experience +'</p>\n\
                 </div>';
     return str;
+}
+
+function getMobileOperatingSystem() {
+    var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+    // Windows Phone must come first because its UA also contains "Android"
+    if (/windows phone/i.test(userAgent)) {
+        return "windows";
+    }
+
+    if (/android/i.test(userAgent)) {
+        return "android";
+    }
+
+    if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+        return "ios";
+    }
+
+    return "unknown";
 }
