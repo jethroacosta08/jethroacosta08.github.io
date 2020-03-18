@@ -1,0 +1,2 @@
+define(["require","exports","react"],function(e,t,i){"use strict";Object.defineProperty(t,"__esModule",{value:!0}),t.RichFacepileContext=i.createContext({localization:{}})});
+//# sourceMappingURL=localization.min.js-vflwTYCAj.map
