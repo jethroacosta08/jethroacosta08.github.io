@@ -1,2 +1,0 @@
-define(["require","exports","spectrum_comments/rich_facepile/avatars","spectrum_comments/rich_facepile/util","spectrum_comments/rich_facepile/rich_facepile"],function(e,i,c,t,l){"use strict";Object.defineProperty(i,"__esModule",{value:!0}),i.OVERFLOW=c.OVERFLOW,i.MAX_FACES=c.MAX_FACES,i.UtilTooltip=t.UtilTooltip,i.DisplayMode=l.DisplayMode,i.RichFacepile=l.RichFacepile,i.SizeClass=l.SizeClass});
-//# sourceMappingURL=index.min.js-vflryl5bI.map
