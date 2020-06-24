@@ -8,7 +8,7 @@ var myWorks = {
     web : [
         {
             name: "AIBOTCMS",
-            image: "aibotcms.png",
+            image: "aibot.png",
             type : "Product (ChatBot CMS)",
             role: "Full Stack Developer",
             company : "Cosmic Ai",
