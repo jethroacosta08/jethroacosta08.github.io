@@ -8,10 +8,10 @@ var myWorks = {
     web : [
         {
             name: "AIBOTCMS",
-            image: "aibotcms.PNG",
+            image: "aibotcms.png",
             type : "Product (ChatBot CMS)",
             role: "Full Stack Developer",
-            company : "Cosmic AI",
+            company : "Cosmic Ai",
             link : "https://aibotcms.herokuapp.com/"
         },
         {
@@ -39,28 +39,12 @@ var myWorks = {
             link: "https://www.leedervillecameras.com.au/"
         },
         {
-            name: "Klik Online Dental Lab",
-            image: "klik.png",
-            type: "E-commerce",
-            role: "Full Stack Developer",
-            company : "Kayweb",
-            link: "https://www.klikdental.com.au"
-        },
-        {
             name: "100 Proof",
             image: "100proof.png",
             type: "E-commerce",
             role: "Full Stack Developer",
             company : "Kayweb",
             link: "http://www.100proof.com.au"
-        },
-        {
-            name: "MyCar Body Shop",
-            image: "mycar.png",
-            type: "Information Website",
-            role: "Full Stack Developer",
-            company : "Kayweb",
-            link: "http://www.mycarbodyshop.com.au/"
         },
         {
             name: "Nagorno Karabakh AU",
@@ -77,9 +61,47 @@ var myWorks = {
             role: "Full Stack Developer",
             company : "Kayweb",
             link: "http://www.armenianreliefsociety.com.au"
+        },
+        {
+            name: "Klik Online Dental Lab",
+            image: "klik.png",
+            type: "E-commerce",
+            role: "Full Stack Developer",
+            company : "Kayweb",
+            link: "https://www.klikdental.com.au"
+        },
+        {
+            name: "MyCar Body Shop",
+            image: "mycar.png",
+            type: "Information Website",
+            role: "Full Stack Developer",
+            company : "Kayweb",
+            link: "http://www.mycarbodyshop.com.au/"
         }
     ],
     app : [
+        {
+            name: "SMS Gateway Local",
+            image: "smsgateway.png",
+            type : "Communications/Automation",
+            role: "Mobile App Developer",
+            company : "Cosmic Ai",
+            applink : {
+                android : "https://play.google.com/store/apps/details?id=com.cosmicai.smsgateway",
+                ios : "https://play.google.com/store/apps/details?id=com.cosmicai.smsgateway"
+            }
+        },
+        {
+            name: "DUGSONG",
+            image: "dugsong.png",
+            type : "Card Game",
+            role: "Mobile App Developer",
+            company : "Cosmic Ai",
+            applink : {
+                android : "https://play.google.com/store/apps/details?id=com.cosmicai.dugsong",
+                ios : "https://play.google.com/store/apps/details?id=com.cosmicai.dugsong"
+            }
+        },
         {
             name: "PNB Mobile Banking",
             image: "pnbmobile.PNG",
@@ -105,11 +127,18 @@ var myWorks = {
     ],
     employment : [
         {
+            name: "Cosmic Ai",
+            image: "cosmicai.png",
+            position: "Founder/CTO",
+            date: "December 2019 - Present",
+            experience: "<br>Chatbot development via dialogflow and Node JS. Mobile development using Java for android, Objective C and Swift for IOS, Firebase for serverless services and REALM for offline database. Managing App consoles such as Firebase, Google Cloud Platform and Google Play"
+        },
+        {
             name: "Tagit PH",
             image: "tagit.png",
             position: "Front End and App Developer",
             date: "May 2018 - Present",
-            experience: "<br>Maintains existing Mobile and Internet banking of PNB.<br><br>Technologies used: Android Studio (Java), Xcode (Objective C), HTML5, CSS3, JavaScript, JQuery, JSON, Bootstrap, Handlebars and SVN."
+            experience: "<br>Maintains existing Mobile and Internet banking of PNB and App developer for FE Credit project.<br><br>Technologies used: Android Studio (Java), Xcode (Objective C), Swift, Firebase, HTML5, CSS3, JavaScript, JQuery, JSON, Bootstrap, Handlebars and SVN."
         },
         {
             name: "Kayweb Website and Apps",
@@ -138,10 +167,6 @@ $(document).ready(function(){
     });
     
     //populating work items;
-    //web
-    $.each(myWorks.web,function(key, row){
-        $(".work-item-container").append(getWorkItemView(row));
-    });
     //app
     var device = getMobileOperatingSystem();
     $.each(myWorks.app,function(key, row){
@@ -156,6 +181,11 @@ $(document).ready(function(){
             row.link = row.applink.android;
         }
         $(".work-item-container").append(getWorkItemView(row, caption));
+    });
+
+    //web
+    $.each(myWorks.web,function(key, row){
+        $(".work-item-container").append(getWorkItemView(row));
     });
     
     //populating employment items
