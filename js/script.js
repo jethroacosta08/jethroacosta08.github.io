@@ -7,6 +7,22 @@ var navpos = "1";
 var myWorks = {
     web : [
         {
+            name: "SIGN ART",
+            image: "signart.png",
+            type : "Portfolio Website/Marketplace",
+            role: "Full Stack Developer",
+            company : "Cosmic Ai",
+            link : "https://www.sign-art.app/"
+        },
+        {
+            name: "VCFIRMEA",
+            image: "vcfirmea.png",
+            type : "Information Website",
+            role: "Full Stack Developer",
+            company : "Cosmic Ai",
+            link : "https://vcfirmea.com/"
+        },
+        {
             name: "AIBOTCMS",
             image: "aibot.png",
             type : "Product (ChatBot CMS)",
@@ -81,6 +97,17 @@ var myWorks = {
     ],
     app : [
         {
+            name: "NowRPM",
+            image: "nowrpm.png",
+            type : "Health & Fitness",
+            role: "Mobile App Developer",
+            company : "Softbir Inc.",
+            applink : {
+                android : "https://play.google.com/store/apps/details?id=com.apkamd.app",
+                ios : "https://play.google.com/store/apps/details?id=com.apkamd.app"
+            }
+        },
+        {
             name: "SMS Gateway Local",
             image: "smsgateway.png",
             type : "Communications/Automation",
@@ -127,9 +154,16 @@ var myWorks = {
     ],
     employment : [
         {
+            name: "Deloitte",
+            image: "deloitte.png",
+            position: "Consultant (CSA)",
+            date: "December 2020 - Present",
+            experience: "<br>Handles ServiceNow platform (HRSD and ITSM). Participates in discussions for any issues being raised and enhancements to be implemented. Develops new features and maintains existing modules."
+        },
+        {
             name: "Cosmic Ai",
             image: "cosmicai.png",
-            position: "Founder/CTO",
+            position: "Founder",
             date: "December 2019 - Present",
             experience: "<br>Chatbot development via dialogflow and Node JS. Mobile development using Java for android, Objective C and Swift for IOS, Firebase for serverless services and REALM for offline database. Managing App consoles such as Firebase, Google Cloud Platform and Google Play"
         },
@@ -137,7 +171,7 @@ var myWorks = {
             name: "Tagit PH",
             image: "tagit.png",
             position: "Front End and App Developer",
-            date: "May 2018 - Present",
+            date: "May 2018 - December 2020",
             experience: "<br>Maintains existing Mobile and Internet banking of PNB and App developer for FE Credit project.<br><br>Technologies used: Android Studio (Java), Xcode (Objective C), Swift, Firebase, HTML5, CSS3, JavaScript, JQuery, JSON, Bootstrap, Handlebars and SVN."
         },
         {
