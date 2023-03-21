@@ -97,36 +97,25 @@ var myWorks = {
     ],
     app : [
         {
-            name: "NowRPM",
-            image: "nowrpm.png",
-            type : "Health & Fitness",
+            name: "Flight Centre: Cheap Flights",
+            image: "flightcentre.png",
+            type : "Flight & Hotel Booking",
             role: "Mobile App Developer",
-            company : "Softbir Inc.",
+            company : "Deloitte",
             applink : {
-                android : "https://play.google.com/store/apps/details?id=com.apkamd.app",
-                ios : "https://play.google.com/store/apps/details?id=com.apkamd.app"
+                android : "https://play.google.com/store/apps/details?id=au.com.flightcentre",
+                ios : "https://apps.apple.com/au/app/flight-centre-cheap-flights/id1152184991"
             }
         },
         {
-            name: "SMS Gateway Local",
-            image: "smsgateway.png",
-            type : "Communications/Automation",
+            name: "PayyoBonus",
+            image: "payyo.png",
+            type : "Rewards Platform",
             role: "Mobile App Developer",
-            company : "Cosmic Ai",
+            company : "JMAGLLC",
             applink : {
-                android : "https://play.google.com/store/apps/details?id=com.cosmicai.smsgateway",
-                ios : "https://play.google.com/store/apps/details?id=com.cosmicai.smsgateway"
-            }
-        },
-        {
-            name: "DUGSONG",
-            image: "dugsong.png",
-            type : "Card Game",
-            role: "Mobile App Developer",
-            company : "Cosmic Ai",
-            applink : {
-                android : "https://play.google.com/store/apps/details?id=com.cosmicai.dugsong",
-                ios : "https://play.google.com/store/apps/details?id=com.cosmicai.dugsong"
+                android : "https://play.google.com/store/apps/details?id=com.payyo.bonus",
+                ios : "https://apps.apple.com/ph/app/payyo-bonus/id6443962443"
             }
         },
         {
@@ -150,36 +139,80 @@ var myWorks = {
                 android : "https://play.google.com/store/apps/details?id=com.fecredit.cards&hl=fil",
                 ios : "https://apps.apple.com/us/app/fe-credit-mobile/id1404353894"
             }
-        }
+        },
+        {
+            name: "NowRPM",
+            image: "nowrpm.png",
+            type : "Health & Fitness",
+            role: "Mobile App Developer",
+            company : "Softbir Inc.",
+            applink : {
+                android : "https://play.google.com/store/apps/details?id=com.apkamd.app",
+                ios : "https://play.google.com/store/apps/details?id=com.apkamd.app"
+            }
+        },
+        {
+            name: "DUGSONG",
+            image: "dugsong.png",
+            type : "Card Game",
+            role: "Mobile App Developer",
+            company : "Cosmic Ai",
+            applink : {
+                android : "https://play.google.com/store/apps/details?id=com.cosmicai.dugsong",
+                ios : "https://play.google.com/store/apps/details?id=com.cosmicai.dugsong"
+            }
+        },
+        {
+            name: "JonLu Properties RE calc",
+            image: "jonlu.png",
+            type : "Real Estate",
+            role: "Mobile App Developer",
+            company : "Cosmic Ai",
+            applink : {
+                android : "https://play.google.com/store/apps/details?id=com.jonluproperties.app",
+                ios : "https://play.google.com/store/apps/details?id=com.jonluproperties.app"
+            }
+        },
+        {
+            name: "SMS Gateway Local",
+            image: "smsgateway.png",
+            type : "Communications/Automation",
+            role: "Mobile App Developer",
+            company : "Cosmic Ai",
+            applink : {
+                android : "https://play.google.com/store/apps/details?id=com.cosmicai.smsgateway",
+                ios : "https://play.google.com/store/apps/details?id=com.cosmicai.smsgateway"
+            }
+        },
     ],
     employment : [
         {
             name: "Deloitte",
             image: "deloitte.png",
-            position: "Consultant (CSA)",
+            position: "Consultant",
             date: "December 2020 - Present",
-            experience: "<br>Handles ServiceNow platform (HRSD and ITSM). Participates in discussions for any issues being raised and enhancements to be implemented. Develops new features and maintains existing modules."
+            experience: "<b>Mobile Capability Lead</b>, responsible for managing the team, conducting team members' skill gap analysis, and giving them the right resources to improve their skillset. Involved in resourcing and training new hires by running boot camps. <b>Mobile Developer</b>, responsible for building client's mobile applications both Android and iOS. I'm involved in different roles such as epic ownership, quality assurance and etc.<br/><br/><b>Skills:</b> React Native · Kotlin · TypeScript · JavaScript · Java · Swift · Objective C"
         },
         {
             name: "Cosmic Ai",
             image: "cosmicai.png",
             position: "Founder",
             date: "December 2019 - Present",
-            experience: "<br>Chatbot development via dialogflow and Node JS. Mobile development using Java for android, Objective C and Swift for IOS, Firebase for serverless services and REALM for offline database. Managing App consoles such as Firebase, Google Cloud Platform and Google Play"
+            experience: "<br><b>Skills:</b> Chatbot development via dialogflow and Node JS. Mobile development using Java for android, Objective C and Swift for IOS, Firebase for serverless services and REALM for offline database. Managing App consoles such as Firebase, Google Cloud Platform and Google Play"
         },
         {
             name: "Tagit PH",
             image: "tagit.png",
             position: "Front End and App Developer",
             date: "May 2018 - December 2020",
-            experience: "<br>Maintains existing Mobile and Internet banking of PNB and App developer for FE Credit project.<br><br>Technologies used: Android Studio (Java), Xcode (Objective C), Swift, Firebase, HTML5, CSS3, JavaScript, JQuery, JSON, Bootstrap, Handlebars and SVN."
+            experience: "<br>Maintains existing Mobile and Internet banking of PNB and App developer for FE Credit project.<br><br><b>Skills:</b> Android Studio (Java), Xcode (Objective C), Swift, Firebase, HTML5, CSS3, JavaScript, JQuery, JSON, Bootstrap, Handlebars and SVN."
         },
         {
             name: "Kayweb Website and Apps",
             image: "kayweb.png",
             position: "Full Stack Developer",
             date: "May 2016 - May 2018",
-            experience: "<br>Developed Information, E-commerce Websites and CRM Apps.<br><br>Technologies used: HTML5, CSS3, JavaScript, JQuery, JSON, Bootstrap, Materialize CSS, PHP (CodeIgniter), Apache Cordova, LINUX server and GIT."
+            experience: "<br>Developed Information, E-commerce Websites and CRM Apps.<br><br><b>Skills:</b> HTML5, CSS3, JavaScript, JQuery, JSON, Bootstrap, Materialize CSS, PHP (CodeIgniter), Apache Cordova, LINUX server and GIT."
         },
         {
             name: "STI College Munoz Edsa",
@@ -245,7 +278,8 @@ var getWorkItemView = function(workItem, buttonCaption)
         buttonCaption = "Go to site";
     }
 
-    var str =  '<div class="work-item col-12 col-sm-6 col-lg-4 no-gutters" style="background: url(images/thumbnails/'+ workItem.image +') center center no-repeat; background-size: cover;">'
+    var str =  '<div class="work-item col-12 col-sm-6 col-lg-4">'
+        str += '<div class="item-image" style="background: url(images/thumbnails/'+ workItem.image +') center center no-repeat; background-size: cover;"></div>'
         str +=  '<div class="work-wrapper">';
         str +=     '<span class="name">'+ workItem.name + '</span>';
         str +=     '<span>'+ workItem.type +'</span>';
