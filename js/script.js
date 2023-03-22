@@ -12,23 +12,8 @@ var myWorks = {
             type : "Portfolio Website/Marketplace",
             role: "Full Stack Developer",
             company : "Cosmic Ai",
-            link : "https://www.sign-art.app/"
-        },
-        {
-            name: "VCFIRMEA",
-            image: "vcfirmea.png",
-            type : "Information Website",
-            role: "Full Stack Developer",
-            company : "Cosmic Ai",
-            link : "https://vcfirmea.com/"
-        },
-        {
-            name: "AIBOTCMS",
-            image: "aibot.png",
-            type : "Product (ChatBot CMS)",
-            role: "Full Stack Developer",
-            company : "Cosmic Ai",
-            link : "https://aibotcms.herokuapp.com/"
+            link : "https://www.sign-art.app/",
+            active : true
         },
         {
             name: "PNB",
@@ -36,7 +21,26 @@ var myWorks = {
             type : "Internet Banking",
             role: "Front End Developer",
             company : "TAGIT PH",
-            link : "https://portal.pnb.com.ph/mib/login.do?app=PN"
+            link : "https://portal.pnb.com.ph/mib/login.do?app=PN",
+            active : true
+        },
+        {
+            name: "VCFIRMEA",
+            image: "vcfirmea.png",
+            type : "Information Website",
+            role: "Full Stack Developer",
+            company : "Cosmic Ai",
+            link : "https://vcfirmea.com/",
+            active : true
+        },
+        {
+            name: "AIBOTCMS",
+            image: "aibot.png",
+            type : "Product (ChatBot CMS)",
+            role: "Full Stack Developer",
+            company : "Cosmic Ai",
+            link : "https://aibotcms.herokuapp.com/",
+            active : false
         },
         {
             name: "EON",
@@ -44,7 +48,8 @@ var myWorks = {
             type : "Internet Banking",
             role: "Front End Developer",
             company : "TAGIT PH",
-            link : "https://ib.eonbankph.com/mib/login.do?app=NB"
+            link : "https://ib.eonbankph.com/mib/login.do?app=NB",
+            active : false
         },
         {
             name: "Leederville Cameras",
@@ -52,7 +57,8 @@ var myWorks = {
             type: "E-commerce",
             role: "Full Stack Developer",
             company : "Kayweb",
-            link: "https://www.leedervillecameras.com.au/"
+            link: "https://www.leedervillecameras.com.au/",
+            active : false
         },
         {
             name: "100 Proof",
@@ -60,7 +66,8 @@ var myWorks = {
             type: "E-commerce",
             role: "Full Stack Developer",
             company : "Kayweb",
-            link: "http://www.100proof.com.au"
+            link: "http://www.100proof.com.au",
+            active : false
         },
         {
             name: "Nagorno Karabakh AU",
@@ -68,7 +75,8 @@ var myWorks = {
             type: "Information Website",
             role: "Full Stack Developer",
             company : "Kayweb",
-            link: "http://www.nkraustralia.org/"
+            link: "http://www.nkraustralia.org/",
+            active : true
         },
         {
             name: "Armenian Relief Society",
@@ -76,7 +84,8 @@ var myWorks = {
             type: "Information Website",
             role: "Full Stack Developer",
             company : "Kayweb",
-            link: "http://www.armenianreliefsociety.com.au"
+            link: "http://www.armenianreliefsociety.com.au",
+            active : true
         },
         {
             name: "Klik Online Dental Lab",
@@ -84,7 +93,8 @@ var myWorks = {
             type: "E-commerce",
             role: "Full Stack Developer",
             company : "Kayweb",
-            link: "https://www.klikdental.com.au"
+            link: "https://www.klikdental.com.au",
+            active : false
         },
         {
             name: "MyCar Body Shop",
@@ -92,7 +102,8 @@ var myWorks = {
             type: "Information Website",
             role: "Full Stack Developer",
             company : "Kayweb",
-            link: "http://www.mycarbodyshop.com.au/"
+            link: "http://www.mycarbodyshop.com.au/",
+            active : false
         }
     ],
     app : [
@@ -105,7 +116,8 @@ var myWorks = {
             applink : {
                 android : "https://play.google.com/store/apps/details?id=au.com.flightcentre",
                 ios : "https://apps.apple.com/au/app/flight-centre-cheap-flights/id1152184991"
-            }
+            },
+            active : true
         },
         {
             name: "PayyoBonus",
@@ -116,7 +128,8 @@ var myWorks = {
             applink : {
                 android : "https://play.google.com/store/apps/details?id=com.payyo.bonus",
                 ios : "https://apps.apple.com/ph/app/payyo-bonus/id6443962443"
-            }
+            },
+            active : true
         },
         {
             name: "PNB Mobile Banking",
@@ -127,7 +140,8 @@ var myWorks = {
             applink : {
                 android : "https://play.google.com/store/apps/details?id=com.pnb.mobile&hl=fil",
                 ios : "https://apps.apple.com/ph/app/pnb-mobile-banking/id1139710846"
-            }
+            },
+            active : true
         },
         {
             name: "FE Credit",
@@ -138,7 +152,8 @@ var myWorks = {
             applink : {
                 android : "https://play.google.com/store/apps/details?id=com.fecredit.cards&hl=fil",
                 ios : "https://apps.apple.com/us/app/fe-credit-mobile/id1404353894"
-            }
+            },
+            active : true
         },
         {
             name: "NowRPM",
@@ -149,7 +164,8 @@ var myWorks = {
             applink : {
                 android : "https://play.google.com/store/apps/details?id=com.apkamd.app",
                 ios : "https://play.google.com/store/apps/details?id=com.apkamd.app"
-            }
+            },
+            active : true
         },
         {
             name: "DUGSONG",
@@ -160,7 +176,8 @@ var myWorks = {
             applink : {
                 android : "https://play.google.com/store/apps/details?id=com.cosmicai.dugsong",
                 ios : "https://play.google.com/store/apps/details?id=com.cosmicai.dugsong"
-            }
+            },
+            active : true
         },
         {
             name: "JonLu Properties RE calc",
@@ -171,7 +188,8 @@ var myWorks = {
             applink : {
                 android : "https://play.google.com/store/apps/details?id=com.jonluproperties.app",
                 ios : "https://play.google.com/store/apps/details?id=com.jonluproperties.app"
-            }
+            },
+            active : true
         },
         {
             name: "SMS Gateway Local",
@@ -182,7 +200,8 @@ var myWorks = {
             applink : {
                 android : "https://play.google.com/store/apps/details?id=com.cosmicai.smsgateway",
                 ios : "https://play.google.com/store/apps/details?id=com.cosmicai.smsgateway"
-            }
+            },
+            active : false
         },
     ],
     employment : [
@@ -284,7 +303,11 @@ var getWorkItemView = function(workItem, buttonCaption)
         str +=     '<span class="name">'+ workItem.name + '</span>';
         str +=     '<span>'+ workItem.type +'</span>';
         str +=     '<span>' + workItem.role + ' - ' + workItem.company + '</span>';
-        str +=     '<a target="_blank" href="'+ workItem.link +'" class="btn btn-info">'+ buttonCaption +'</a>';
+        if(workItem.active) {
+            str +=     '<a target="_blank" href="'+ workItem.link +'" class="btn btn-info">'+ buttonCaption +'</a>';
+        } else {
+            str +=     '<i> No longer available...</i>';
+        }
         str +=  '</div>';
         str += '</div>';
         
