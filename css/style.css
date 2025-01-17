@@ -41,6 +41,11 @@ body
     height: auto;
 }
 
+.item-container {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
 .scroll-page-1
 {
     background:rgba(00, 00, 00, 0.92);

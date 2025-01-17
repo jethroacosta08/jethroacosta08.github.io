@@ -3,212 +3,236 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-var navpos = "1";           
+var navpos = "1";
 var myWorks = {
-    web : [
+    web: [
         {
             name: "SIGN ART",
             image: "signart.png",
-            type : "Portfolio Website/Marketplace",
+            type: "Portfolio Website/Marketplace",
             role: "Full Stack Developer",
-            company : "Cosmic Ai",
-            link : "https://www.sign-art.app/",
-            active : true
+            company: "Cosmic Ai",
+            link: "https://www.sign-art.app/",
+            active: false
         },
         {
             name: "PNB",
             image: "pnb.png",
-            type : "Internet Banking",
+            type: "Internet Banking",
             role: "Front End Developer",
-            company : "TAGIT PH",
-            link : "https://portal.pnb.com.ph/mib/login.do?app=PN",
-            active : true
+            company: "TAGIT PH",
+            link: "https://portal.pnb.com.ph/mib/login.do?app=PN",
+            active: false
         },
         {
             name: "VCFIRMEA",
             image: "vcfirmea.png",
-            type : "Information Website",
+            type: "Information Website",
             role: "Full Stack Developer",
-            company : "Cosmic Ai",
-            link : "https://vcfirmea.com/",
-            active : true
+            company: "Cosmic Ai",
+            link: "https://vcfirmea.com/",
+            active: true
         },
         {
             name: "AIBOTCMS",
             image: "aibot.png",
-            type : "Product (ChatBot CMS)",
+            type: "Product (ChatBot CMS)",
             role: "Full Stack Developer",
-            company : "Cosmic Ai",
-            link : "https://aibotcms.herokuapp.com/",
-            active : false
+            company: "Cosmic Ai",
+            link: "https://aibotcms.herokuapp.com/",
+            active: false
         },
         {
             name: "EON",
             image: "eon.PNG",
-            type : "Internet Banking",
+            type: "Internet Banking",
             role: "Front End Developer",
-            company : "TAGIT PH",
-            link : "https://ib.eonbankph.com/mib/login.do?app=NB",
-            active : false
+            company: "TAGIT PH",
+            link: "https://ib.eonbankph.com/mib/login.do?app=NB",
+            active: false
         },
         {
             name: "Leederville Cameras",
             image: "leederville.png",
             type: "E-commerce",
             role: "Full Stack Developer",
-            company : "Kayweb",
+            company: "Kayweb",
             link: "https://www.leedervillecameras.com.au/",
-            active : false
+            active: false
         },
         {
             name: "100 Proof",
             image: "100proof.png",
             type: "E-commerce",
             role: "Full Stack Developer",
-            company : "Kayweb",
+            company: "Kayweb",
             link: "http://www.100proof.com.au",
-            active : false
+            active: false
         },
         {
             name: "Nagorno Karabakh AU",
             image: "nkr.png",
             type: "Information Website",
             role: "Full Stack Developer",
-            company : "Kayweb",
+            company: "Kayweb",
             link: "http://www.nkraustralia.org/",
-            active : true
+            active: false
         },
         {
             name: "Armenian Relief Society",
             image: "ars.png",
             type: "Information Website",
             role: "Full Stack Developer",
-            company : "Kayweb",
+            company: "Kayweb",
             link: "http://www.armenianreliefsociety.com.au",
-            active : true
+            active: false
         },
         {
             name: "Klik Online Dental Lab",
             image: "klik.png",
             type: "E-commerce",
             role: "Full Stack Developer",
-            company : "Kayweb",
+            company: "Kayweb",
             link: "https://www.klikdental.com.au",
-            active : false
+            active: false
         },
         {
             name: "MyCar Body Shop",
             image: "mycar.png",
             type: "Information Website",
             role: "Full Stack Developer",
-            company : "Kayweb",
+            company: "Kayweb",
             link: "http://www.mycarbodyshop.com.au/",
-            active : false
+            active: false
         }
     ],
-    app : [
+    app: [
+        {
+            name: "Travel Money Oz",
+            image: "tmoz.png",
+            type: "Digital Wallet",
+            role: "Mobile Tech Lead",
+            company: "Deloitte",
+            applink: {
+                android: "https://play.google.com/store/apps/details?id=au.com.tmoz.app.v2&hl=en",
+                ios: "https://apps.apple.com/au/app/travel-money-oz/id6478733845"
+            },
+            active: true
+        },
+        {
+            name: "Qantas Airways",
+            image: "qantas.png",
+            type: "Flight Booking",
+            role: "Backend Developer",
+            company: "Deloitte",
+            applink: {
+                android: "https://play.google.com/store/apps/details?id=au.com.qantas.qantas&hl=en",
+                ios: "https://apps.apple.com/au/app/qantas-airways/id640437525"
+            },
+            active: true
+        },
         {
             name: "Flight Centre: Cheap Flights",
             image: "flightcentre.png",
-            type : "Flight & Hotel Booking",
+            type: "Flight & Hotel Booking",
             role: "Mobile App Developer",
-            company : "Deloitte",
-            applink : {
-                android : "https://play.google.com/store/apps/details?id=au.com.flightcentre",
-                ios : "https://apps.apple.com/au/app/flight-centre-cheap-flights/id1152184991"
+            company: "Deloitte",
+            applink: {
+                android: "https://play.google.com/store/apps/details?id=au.com.flightcentre",
+                ios: "https://apps.apple.com/au/app/flight-centre-cheap-flights/id1152184991"
             },
-            active : true
+            active: true
         },
         {
             name: "PayyoBonus",
             image: "payyo.png",
-            type : "Rewards Platform",
+            type: "Rewards Platform",
             role: "Mobile App Developer",
-            company : "JMAGLLC",
-            applink : {
-                android : "https://play.google.com/store/apps/details?id=com.payyo.bonus",
-                ios : "https://apps.apple.com/ph/app/payyo-bonus/id6443962443"
+            company: "JMAGLLC",
+            applink: {
+                android: "https://play.google.com/store/apps/details?id=com.payyo.bonus",
+                ios: "https://apps.apple.com/ph/app/payyo-bonus/id6443962443"
             },
-            active : true
+            active: false
         },
         {
             name: "PNB Mobile Banking",
             image: "pnbmobile.PNG",
-            type : "Mobile Banking",
+            type: "Mobile Banking",
             role: "Mobile App Developer",
-            company : "TAGIT PH",
-            applink : {
-                android : "https://play.google.com/store/apps/details?id=com.pnb.mobile&hl=fil",
-                ios : "https://apps.apple.com/ph/app/pnb-mobile-banking/id1139710846"
+            company: "TAGIT PH",
+            applink: {
+                android: "https://play.google.com/store/apps/details?id=com.pnb.mobile&hl=fil",
+                ios: "https://apps.apple.com/ph/app/pnb-mobile-banking/id1139710846"
             },
-            active : true
+            active: true
         },
         {
             name: "FE Credit",
             image: "fec.PNG",
-            type : "Finance",
+            type: "Finance",
             role: "Mobile App Developer",
-            company : "TAGIT PH",
-            applink : {
-                android : "https://play.google.com/store/apps/details?id=com.fecredit.cards&hl=fil",
-                ios : "https://apps.apple.com/us/app/fe-credit-mobile/id1404353894"
+            company: "TAGIT PH",
+            applink: {
+                android: "https://play.google.com/store/apps/details?id=com.fecredit.cards&hl=fil",
+                ios: "https://apps.apple.com/us/app/fe-credit-mobile/id1404353894"
             },
-            active : true
+            active: true
         },
         {
             name: "NowRPM",
             image: "nowrpm.png",
-            type : "Health & Fitness",
+            type: "Health & Fitness",
             role: "Mobile App Developer",
-            company : "Softbir Inc.",
-            applink : {
-                android : "https://play.google.com/store/apps/details?id=com.apkamd.app",
-                ios : "https://play.google.com/store/apps/details?id=com.apkamd.app"
+            company: "Softbir Inc.",
+            applink: {
+                android: "https://play.google.com/store/apps/details?id=com.apkamd.app",
+                ios: "https://play.google.com/store/apps/details?id=com.apkamd.app"
             },
-            active : true
+            active: true
         },
         {
             name: "DUGSONG",
             image: "dugsong.png",
-            type : "Card Game",
+            type: "Card Game",
             role: "Mobile App Developer",
-            company : "Cosmic Ai",
-            applink : {
-                android : "https://play.google.com/store/apps/details?id=com.cosmicai.dugsong",
-                ios : "https://play.google.com/store/apps/details?id=com.cosmicai.dugsong"
+            company: "Cosmic Ai",
+            applink: {
+                android: "https://play.google.com/store/apps/details?id=com.cosmicai.dugsong",
+                ios: "https://play.google.com/store/apps/details?id=com.cosmicai.dugsong"
             },
-            active : true
+            active: true
         },
         {
             name: "JonLu Properties RE calc",
             image: "jonlu.png",
-            type : "Real Estate",
+            type: "Real Estate",
             role: "Mobile App Developer",
-            company : "Cosmic Ai",
-            applink : {
-                android : "https://play.google.com/store/apps/details?id=com.jonluproperties.app",
-                ios : "https://play.google.com/store/apps/details?id=com.jonluproperties.app"
+            company: "Cosmic Ai",
+            applink: {
+                android: "https://play.google.com/store/apps/details?id=com.jonluproperties.app",
+                ios: "https://play.google.com/store/apps/details?id=com.jonluproperties.app"
             },
-            active : true
+            active: true
         },
         {
             name: "SMS Gateway Local",
             image: "smsgateway.png",
-            type : "Communications/Automation",
+            type: "Communications/Automation",
             role: "Mobile App Developer",
-            company : "Cosmic Ai",
-            applink : {
-                android : "https://play.google.com/store/apps/details?id=com.cosmicai.smsgateway",
-                ios : "https://play.google.com/store/apps/details?id=com.cosmicai.smsgateway"
+            company: "Cosmic Ai",
+            applink: {
+                android: "https://play.google.com/store/apps/details?id=com.cosmicai.smsgateway",
+                ios: "https://play.google.com/store/apps/details?id=com.cosmicai.smsgateway"
             },
-            active : false
+            active: false
         },
     ],
-    employment : [
+    employment: [
         {
             name: "Deloitte",
             image: "deloitte.png",
-            position: "Consultant",
+            position: "Senior Consultant (Mobile Tech Lead)",
             date: "December 2020 - Present",
             experience: "<b>Mobile Capability Lead</b>, responsible for managing the team, conducting team members' skill gap analysis, and giving them the right resources to improve their skillset. Involved in resourcing and training new hires by running boot camps. <b>Mobile Developer</b>, responsible for building client's mobile applications both Android and iOS. I'm involved in different roles such as epic ownership, quality assurance and etc.<br/><br/><b>Skills:</b> React Native · Kotlin · TypeScript · JavaScript · Java · Swift · Objective C"
         },
@@ -242,86 +266,81 @@ var myWorks = {
         }
     ]
 }
-$(document).ready(function(){
-    $(".navigator li i").click(function(){
-       $(".navigator li i").removeClass("active");
-       $(this).addClass("active");
-       var pos = $(this).attr("data-pos");
-       $('html,body').animate({
-            scrollTop: $(".scroll-page-"+pos).offset().top},
-        'slow');
+$(document).ready(function () {
+    $(".navigator li i").click(function () {
+        $(".navigator li i").removeClass("active");
+        $(this).addClass("active");
+        var pos = $(this).attr("data-pos");
+        $('html,body').animate({
+            scrollTop: $(".scroll-page-" + pos).offset().top
+        },
+            'slow');
     });
-    
+
     //populating work items;
     //app
     var device = getMobileOperatingSystem();
-    $.each(myWorks.app,function(key, row){
+    $.each(myWorks.app, function (key, row) {
         let caption = "Go to Play Store";
-        if(device == "ios")
-        {
+        if (device == "ios") {
             caption = "Go to App Store";
             row.link = row.applink.ios;
         }
-        else
-        {
+        else {
             row.link = row.applink.android;
         }
         $(".work-item-container").append(getWorkItemView(row, caption));
     });
 
     //web
-    $.each(myWorks.web,function(key, row){
+    $.each(myWorks.web, function (key, row) {
         $(".work-item-container").append(getWorkItemView(row));
     });
-    
+
     //populating employment items
-    $.each(myWorks.employment,function(key, row){
+    $.each(myWorks.employment, function (key, row) {
         $(".employer-item-container").append(getEmpItemView(row));
     });
-    
-    $(".scroll-page").mouseenter(function(){
-       var pos = $(this).attr("data-pos");
-       if(pos != navpos)
-       {
-           $(".navigator li i").removeClass("active");
-           $(".nav-"+pos).addClass("active");
-           navpos = pos;
-       }
+
+    $(".scroll-page").mouseenter(function () {
+        var pos = $(this).attr("data-pos");
+        if (pos != navpos) {
+            $(".navigator li i").removeClass("active");
+            $(".nav-" + pos).addClass("active");
+            navpos = pos;
+        }
     });
 });
 
-var getWorkItemView = function(workItem, buttonCaption)
-{
-    if(!buttonCaption)
-    {
+var getWorkItemView = function (workItem, buttonCaption) {
+    if (!buttonCaption) {
         buttonCaption = "Go to site";
     }
 
-    var str =  '<div class="work-item col-12 col-sm-6 col-lg-4">'
-        str += '<div class="item-image" style="background: url(images/thumbnails/'+ workItem.image +') center center no-repeat; background-size: cover;"></div>'
-        str +=  '<div class="work-wrapper">';
-        str +=     '<span class="name">'+ workItem.name + '</span>';
-        str +=     '<span>'+ workItem.type +'</span>';
-        str +=     '<span>' + workItem.role + ' - ' + workItem.company + '</span>';
-        if(workItem.active) {
-            str +=     '<a target="_blank" href="'+ workItem.link +'" class="btn btn-info">'+ buttonCaption +'</a>';
-        } else {
-            str +=     '<i> No longer available...</i>';
-        }
-        str +=  '</div>';
-        str += '</div>';
-        
+    var str = '<div class="work-item col-12 col-sm-6 col-lg-4">'
+    str += '<div class="item-image" style="background: url(images/thumbnails/' + workItem.image + ') center center no-repeat; background-size: cover;"></div>'
+    str += '<div class="work-wrapper">';
+    str += '<span class="name">' + workItem.name + '</span>';
+    str += '<span>' + workItem.type + '</span>';
+    str += '<span>' + workItem.role + ' - ' + workItem.company + '</span>';
+    if (workItem.active) {
+        str += '<a target="_blank" href="' + workItem.link + '" class="btn btn-info">' + buttonCaption + '</a>';
+    } else {
+        str += '<i> No longer available...</i>';
+    }
+    str += '</div>';
+    str += '</div>';
+
     return str;
 };
 
-var getEmpItemView = function(empItem)
-{
+var getEmpItemView = function (empItem) {
     var str = '<div class="col-12 col-lg-4">\n\
-                    <div class="emp-image" style="background: url(images/employer/'+ empItem.image +') center center no-repeat; background-size: contain;"></div>\n\
-                    <span class="emp-name rubik-txt">'+ empItem.name +'</span>\n\
-                    <span class="emp-pos">'+ empItem.position +'</span>\n\
-                    <span>'+ empItem.date +'</span>\n\
-                    <p>'+ empItem.experience +'</p>\n\
+                    <div class="emp-image" style="background: url(images/employer/'+ empItem.image + ') center center no-repeat; background-size: contain;"></div>\n\
+                    <span class="emp-name rubik-txt">'+ empItem.name + '</span>\n\
+                    <span class="emp-pos">'+ empItem.position + '</span>\n\
+                    <span>'+ empItem.date + '</span>\n\
+                    <p>'+ empItem.experience + '</p>\n\
                 </div>';
     return str;
 }
